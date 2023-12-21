@@ -1,0 +1,38 @@
+			Welcome To Selenium Module 
+				  Sumit Raokhande
+
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc , Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+
+
+
+
+- Monday to Friday daily 
+- 1.30 hr it may be 1 hr or it may be 2 hr as well depends on topic avg 1.30hr 
+- duration is 40 to 45 hrs 
+- U will get daily recording => Portal 
+- All codes will given on git hub repos except images (on Portal)
+- I am Very Strict about Timing => 8.30Am 
+- no any extra doubt solving trainer => i will solve ur doubt => there is no any other session => u have join before 10 min early or u can wait after session  10 min to resolve ur doubt.
+- Selenium project will be covered 
+- All interview Questions will given 
+- 3 test mandatory => u have performance in test 
+- don't miss any session => if ur session is missed some reasons then u hv to go through the recording before joining a next session 
+- Daily practice is needed 
+
+i Expected From U 
+- U know core java Technical sound (OOPS concept required )
+- Basic knowledge of HTML & CSS 
+- Two way Communication is required=> response unmute / zoom chat / action button 
+- U can ask any question regarding syllabus 
+ 
