@@ -1,0 +1,54 @@
+Last Lecture Agenda
+1 Continue WebElement
+	driver.findelement(By.xpath("...")).click();
+	driver.findelement(By.xpath("...")).sendKeys("....");
+	driver.findelement(By.xpath("....")).click();
+	driver.findelement(By.xpath("....")).click();
+	
+	WebElement dropDownElement=driver.findelement(By.xpath("...."));
+	
+	Select select=new Select(dropDownElement);
+	select.selectById(1);
+	
+	select.selectByValue("HP");
+	select.selectByVisisbleText("Delhi");
+	
+	Alert alert= driver.switchTo().alert();
+	
+	alert.accept();
+	driver.switchTo().defaultContent();
+	
+	
+2 How to automate radio button
+3 How to Automate drop down
+4 How to use Alert in selenium 
+
+
+summary & Interview Questions
+1 How to automate radio button
+2 How to Automate drop down 
+3 How to use Alert in selenium 
+
+Today's Lecture Agenda
+1 Modify the Code 
+	
+	
+
+2 Locators
+	- To loacte your web element => to get the handle/Object of particular Web Element
+	1 Id
+	2 name
+	3 linkText 
+		- It generally used for anchor tag <a href=""> Home </a>
+	4 partialLinkText
+	5 tag name 
+	6 Attributes
+	7 class name 
+	8 CssSelector
+	9 Dynamic xpath => pending 
+
+summary & Interview Questions
+1 What is locators
+2 Why we use locators?
+3 When we use ID locators?
+
