@@ -1,0 +1,44 @@
+Last Lecture Agenda
+1  - tag name 
+	- Attributes
+	- class name 
+	- CssSelector
+	- Dynamic xpath => pending 
+2 Navigation Command
+
+ List<WebElement> list= driver.findElements(By.tagname("input"));
+ 
+ for(int i=0;i<list.size();i++){
+	WebElement element=list.get(i);
+	
+	if(element.getAttribute("placeholde").equalIgnoreCase("Email")){
+		element.sendKeys("")
+	}
+	
+ }
+ 
+ driver.findElement(By.classname("btn")).click();
+ alert alert=driver.switchTo().alert();
+ alert.accept();
+ driver.switchTo().defaultContent();
+ 
+ driver.navigate().back();
+ driver.navigate().forward();
+ ....
+ 
+ driver.findElement(By.cssSelector("#email")).sendKeys("")
+ driver.findElement(By.cssSelector("input[type='password']")).sendKeys("12345")
+
+
+summary & Interview Questions
+1 What is locators
+2 Why we use locators?
+3 When we use ID locators?
+4 How to Navigate in selenium?
+
+Today's Lecture Agenda
+1 Window handle in selenium 
+
+summary & Interview Questions
+1 How to Handle Window?
+2 How to switch window?
