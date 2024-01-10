@@ -1,0 +1,13 @@
+Last Lecture Agenda
+1 Conducted Test
+
+summary & Interview Questions
+1 Not Allowed for this session due to test 
+
+Today's Lecture Agenda
+1 WebTables
+
+summary & Interview Questions
+1 What is WebTables?
+2 How To Automate WebTables?
+3 How to read data from tables?
