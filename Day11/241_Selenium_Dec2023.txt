@@ -1,0 +1,32 @@
+Last Lecture Agenda
+1 Task checking
+
+summary & Interview Questions
+1 This session Not allowed
+
+Today's Lecture Agenda
+1 What is Synchronization
+2 iframe
+2 Wait in Selenium
+3 implicit wait
+	- It wait full web application 
+	- We have to give duration for wait 
+	
+4 explicit wait =>  pending
+	- it wait a particular web element
+	- We have to give duration for wait 
+	- WebDriverWait use => we send deiver for wait period 
+	- we have to set a conditions 
+5 Difference between implicit wait & explicit wait 
+	
+summary & Interview Questions
+1 What is Synchronization
+2 How many waits are present?
+3 what is implicit wait?
+	driver.manage().timeOuts().implicitWait(5,unit..);
+4 What is Explicit wait?
+	WebDriberWait wait=new WebDriberWait(driver,5);
+	WebElement element= wait.until(ExpectedConditions.visibilityOfLocated(By.name(...)));
+5 Difference between implicit wait & explicit wait
+
+	
