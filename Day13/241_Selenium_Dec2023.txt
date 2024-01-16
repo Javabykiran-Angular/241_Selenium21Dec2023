@@ -1,0 +1,31 @@
+Last Lecture Agenda
+
+Registration Link- https://koalendar.com/e/javabykiran-mock-interview
+
+1 explicit wait =>  
+	- it wait a particular web element
+	- We have to give duration for wait 
+	- WebDriverWait use => we send deiver for wait period 
+	- we have to set a conditions 
+
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSecond(10));
+	
+		WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("....")))
+		
+		element.sendKeys("....");		
+		
+summary & Interview Questions
+1 What is Explicit wait?
+
+Today's Lecture Agenda
+1 TakesScreenShot
+2 Propertites File access
+	- It store ur config data 
+	- myfile.properties
+	- U can store data into key & value format 
+
+summary & Interview Questions
+1 How take scree shot in selenium?
+2 What is purpose of properties file?
+3 How to use Propertites file in selenium?
+4 Write down some lines of code for taking screenshot?
