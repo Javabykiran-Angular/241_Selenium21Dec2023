@@ -1,0 +1,51 @@
+Last Lecture Agenda
+1 TakesScreenShot
+	
+	File source= ((TakesScreenShot)driver).getScreenShotAs(outputType.File);
+	File target=new File("...");
+	
+	try{
+	FileHandler.copy(source,target);
+	}
+	catch(Exception e){
+		e.prinstackTrace();
+	}
+	
+2 Propertites File access
+	- It store ur config data 
+	- myfile.properties
+	- U can store data into key & value format 
+	
+	Steps 
+	1 create a property file & entering the details in key & value format 
+	2 we have to create object of FileInputStrame.it holds the file object data 
+	3 To get the data from property file for that we create a Object of Property class 
+	4 to load that file props.load(fis);
+	5 to access a particular data we have to  provide a key name in getProperty() method 
+	
+
+summary & Interview Questions
+1 How take scree shot in selenium?
+2 What is purpose of properties file?
+3 How to use Propertites file in selenium?
+4 Write down some lines of code for taking screenshot?
+
+Today's Lecture Agenda
+1 Why we use excel sheet ?
+	- To store test data/testing data  
+2 How to Access Excel Sheet Data 
+2 Apache POI Lib
+
+
+
+
+
+summary & Interview Questions
+1 Why we use Apache POI 
+2 How to Access Excel Sheet Data?
+	To access Excel sheet data in Selenium, you can use a combination of Selenium and a library like Apache POI (for Java). For that we have to use Apache POI Lib. to add our project.we required poi and poi-ooxml lib, to your project.
+		Some Steps we have to follow 
+		1 You need to specify the path to your Excel file (filePath) and the name of the sheet you want to read (sheetName).
+		2 The code opens the Excel file, accesses the specified sheet, and then goes through each row and column to iterate and get the content of each cell in a tabular format.
+		
+3 Why we use excel sheet ?
