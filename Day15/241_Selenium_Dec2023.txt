@@ -1,0 +1,157 @@
+Last Lecture Agenda
+1 Why we use excel sheet ?
+	- To store test data/testing data  
+2 How to Access Excel Sheet Data 
+2 Apache POI Lib
+
+class config
+{
+	public void readfile(){
+	try{
+		
+		FileInputStream fis=new FileInputStream("....");
+		
+		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		XSSFSheet sheet=workbook.getSheet("...");
+			int rowno=sheet.getLastRoeNum();
+			
+			for(int i=0;i<=rowno;i++){
+				XSSfRow row=sheet.getRow(i);
+				int colno=row.getLastCellNo();
+				
+				for(int j=0;j<colno;j++){
+					XSSFCell cell=row.getCell(j);
+					Syso(cell.getStringCellValue());
+					
+				}
+				
+			}
+			
+		
+		}catch(Exception e){
+			e.printStackStrace();
+		}
+		
+	}
+}
+
+
+summary & Interview Questions
+1 Why we use Apache POI 
+2 How to Access Excel Sheet Data?
+	To access Excel sheet data in Selenium, you can use a combination of Selenium and a library like Apache POI (for Java). For that we have to use Apache POI Lib. to add our project.we required poi and poi-ooxml lib, to your project.
+		Some Steps we have to follow 
+		1 You need to specify the path to your Excel file (filePath) and the name of the sheet you want to read (sheetName).
+		2 The code opens the Excel file, accesses the specified sheet, and then goes through each row and column to iterate and get the content of each cell in a tabular format.
+		
+3 Why we use excel sheet ?
+
+Today's Lecture Agenda
+ Ques & Ans Session
+1 What is Selenium
+	- it is a automation tool/sw
+	- it is open source lib., we can customize this as per our requirement
+	- it automate ur web application=> web application
+	- It provides a set of tools and libraries that enable developers to interact with web applications
+	- It support multiple lang such as java,python,ruby,c#,javascript 
+	- It supports all cross platform
+	- It is support all browser
+	
+2 What is meaning of WebDriver driver = new ChromeDriver();
+
+	- We are creating ChromeDriver instance & storing it in a variable(reference ) called driver which is type of WebDriver interface
+	- It access to webdriver method to automatate the web element
+	
+	
+3 Why we are not writing like that? 
+ChromeDriver driver =new ChromeDriver();
+	
+This is Correct statement, Since chromedriver is a class and we can create object from it.But we don't prefer writing this way because we don't limit to our testing to only chrome browser and we don't want to declare multiple instance of driver.
+
+	
+4 Why we write Webdriver driver =new ChromeDriver(); ?	
+	
+In Real time world/industry we work with multiple browser not only single chrome browser, if i want execute for firefox driver so we can work with them so for that we have change to Webdriver driver =new FirefoxDriver();
+now Here ChromeDriver class & FirefoxDriver  class has different instance. it has its own extra methods so if we use ChromeDriver driver =new ChromeDriver(); it affects to test firefox browser testing 
+so for this all reason we use 
+Webdriver driver =new ChromeDriver();
+
+	
+5 Advatanges of selenium?
+
+	1 It is open source tool/SW 
+	2 it is used for web based application testing & automation 
+	3 It support all platform(os=> windows,linux,mac,suse,ubantu) 
+	4 It required less time to excecute
+	5 It support all browser (like chrome,firfox,edge,IE,safari,opera)
+	6 selenium support multiple lang.(Java,python,ruby,javascript,c#)
+		
+6 Disadvtanges of selenium
+	1 we can't test desktop application (like word,notepad,ppt,calculator)
+	2 it not test captcha,file download and images 
+	3 it is not support mobile native application 
+	4 It is required more time to implement.
+	
+7 List Out the WebDriver Methods & explain it?
+	- It is an Interafce which set of methods 
+	1 get()=> it is used to open web Application in a browser 
+	2 getTitle()=> it fetch the title of the web Application
+	3 getPageSource() => it gives the Source code of a particular web page 
+	4 getCurrentUrl() => it gives the current url 
+	5 findElement() => to locate only one web element on web pages.it locate only one web element 
+	6 findElements()=> to locate a web elements on web pages.it locate list of web element 
+	7 switchTo() => to switch the context of web driver to another wondow or frame or alert
+	8 navigate() => to handle the web browser controls (back,forward,refresh)
+	9 close() 	 => to close the current window/browser 
+
+	
+	
+8 List out the WebElement Methods & explain it? 
+	- WebElement is interface to access a web element whose attribute
+	1 sendKeys()=> to send/set a test data to particular web element 
+	2 click() => to perfrom action on that particular web element
+	3 clear() => to clear test data from that particular web element
+	4 getText()  => to get the text / inner html content of that web element 
+	5 getAttribute()=> to access the attribute of particular web element 
+	6 findElement() => to locate a web element on web pages.it locate only one web element 
+	7 findElements()=> to locate a web elements on web pages.it locate list of web element 
+	
+	
+9 Which locators are present in selenium?
+	- it is used to loacte a web element to get the handle or object of particular web element 
+	1 id 
+		driver.findelement((By.id("Idname"))).sendKeys("dgsd");
+	2 name
+		driver.findElement(By.name())
+	3 classname
+	4 linktext => generally used for anchor tag 
+	5 partiallinktext
+	6 tagname
+		driver.findelement(By.tagName("tagname")).click();
+	7 css selector 
+		By.cssSelector("#id1");
+		By.cssSelector("input[id='...']")
+	8 xpath 
+	
+10 How to handle browser controls?/How to use navigation command?/Do you know navigation command
+	- By Using navigate method.It is present in webDriver interface 
+	- with navigate method we can use back,forward and refresh browser controls 
+	driver.navigate().back();
+	driver.navigate().forward();
+	
+
+11 What is Synchronization?
+12 Explain waits in selenium?
+
+In Selenium, synchronization refers to the process of managing the timing and interaction between the test script and the web application being tested. It ensures that the test script waits for specific conditions to be met before performing actions or assertions on the web elements.
+	
+	Web applications often have dynamic content, asynchronous behavior, and delays in loading or processing. As a result, test scripts may need to wait for elements to become visible, enabled, or updated before interacting with them or verifying their state.
+	
+	Here are some common synchronization techniques used in Selenium:
+	
+	1 Implicit Waits: Implicit waits instruct the Selenium WebDriver to wait for a certain amount of time for elements to become available before throwing an exception. The WebDriver will implicitly wait for the specified time before attempting to find or interact with an element.
+
+	2 Explicit Waits: Explicit waits provide more control over waiting conditions. Testers can define custom conditions using the ExpectedConditions class and specify a maximum wait time. Explicit waits wait until the condition is met or a timeout occurs.
+	
+	3 Thread.sleep(): Although not a recommended approach, Thread.sleep() is a general-purpose Java method that pauses the execution of the script for a specified time. It introduces fixed delays and is less flexible compared to other synchronization techniques.
+	
