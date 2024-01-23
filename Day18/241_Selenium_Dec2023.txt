@@ -1,0 +1,24 @@
+Last Lecture Agenda
+1 Dynamic xpath continue
+	to get nearest node 
+	conatins()
+	starts-with()
+ 
+	
+summary & Interview Questions
+1 How Following Works?
+2 How to calculate Dynamic xpath using child?  
+
+Today's Lecture Agenda
+1 Following => 
+	e.g (//div[@id='__next']/div[2]//following::li)[2]/a
+3 Child =>  
+	e.g. (//div[@id='__next']/div[2]//child::li)[3]/a
+4 Action class 
+
+	
+summary & Interview Questions
+1 How Following Works?
+2 How to calculate Dynamic xpath using child?
+3 How to use scroll bar to window
+
