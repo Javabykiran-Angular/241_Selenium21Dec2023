@@ -1,0 +1,21 @@
+Last Lecture Agenda
+1 Testng xml
+	- if u want execute multiple test cases in different classes at a time 
+2 Report generation
+3 @Test- Parameter
+
+summary & Interview Questions
+1 Why to use testNG.xml
+2 How to set priority to test cases?
+3 @Test annotation you might be knowing, can you explain some of attributes of that annotation like priority
+4 What is use of TestNg?
+
+Today's Lecture Agenda
+1 testNG Annotations
+2 Freamwork Integration
+
+summary & Interview Questions
+1 What is use of @BeforeClass?
+2 What is use of @BeforeMEthod?
+3 Explain Life cyle of testNG annotation?
+4 Explain different type of annotations?
