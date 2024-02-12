@@ -1,0 +1,95 @@
+Last Lecture Agenda
+1 Freamwork Integration continue
+class config{
+	....
+	public void browserSetting(String url){
+	...
+	driver.get(url);
+	}
+	
+	public String readurl(){
+	...
+	}
+	
+	public Webelement accessById(String id){
+		return driver.findElemnet(By.xpath(id));
+	}
+	...
+	
+}
+
+class LoginTest extends Config
+{
+String Url=null;
+	@BeforeTest()
+	public void readUrl(){
+			Url=readurl();
+	}
+	
+	@BeforeClass
+	public void browserSetting(){
+	
+		browserSetting(Url);
+	
+	}
+	
+	@Test(prority=1)
+	public void usernameTest(){
+	
+		...
+	
+	}
+	
+	@Test(prority=2)
+	public void passwordTest(){
+	
+		...
+	
+	}
+	@Test(prority=3)
+	public void btnClickTest(){
+	
+		
+		...
+		WebElement element=accessById("email_error");
+		String actualResult= element.getText();
+		String expectedResult="...";
+		
+		SoftAssert assert=new SoftAssert();
+		
+		assert.assertEquals(actualResult,expectedResult);
+		assert.assertEquals(actualResult,expectedResult);
+		
+		assert.assertAll();
+		
+		
+	
+	}
+	
+}
+
+
+
+2 Assert
+	- To execute ur test case 
+	- by default it is used Hard assert 
+3 Hard Assert
+	it execute only one test case 
+4 Soft Assert
+
+summary & Interview Questions
+
+1 Why we use assert?
+2 What is hard assert?
+3 What is soft Assert?
+4 Difference between hard assert & soft assert?
+
+Today's Lecture Agenda
+1 Data Provider
+	 - It sends multiple data to any test case for testing
+2 @DataProvider
+
+
+summary & Interview Questions
+1 Why we use data provider?
+2 Explain @DataProvider annotation?
