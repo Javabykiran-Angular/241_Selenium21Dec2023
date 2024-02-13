@@ -1,0 +1,38 @@
+Last Lecture Agenda
+1 Data Provider
+	 - It sends multiple data to any test case for testing
+2 @DataProvider
+
+@Test(proprity=1,dataparamter="testdata")
+public void loginTest(int id,String username,String pwd){
+	Syso();
+}
+
+@DataProvider(name="testdata")
+public Object[][] testdata(){
+	
+	return new Object[][]{
+		{9,"..","..."},
+		{3,"..","..."},
+		{6,"..","..."}
+	}
+}
+
+
+summary & Interview Questions
+1 Why we use data provider?
+2 Explain @DataProvider annotation?
+
+Today's Lecture Agenda
+1 Full Integration
+
+summary & Interview Questions
+1 Explain how to do full integration
+
+
+	File source=((TakesScreenShot)driver).getScreenShotAs(OutType.file);
+	
+	File target=new File("...");
+	
+	FileHandler.copy(source,target);
+	
